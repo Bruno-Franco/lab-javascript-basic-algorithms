@@ -33,18 +33,18 @@ console.log(normalName)
 
 // BONUS
 
-let longText = `Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse dictum tempor condimentum; ad condimentum morbi. Aliquam dictum elementum curabitur eu a a blandit. Mollis et iaculis sollicitudin nulla eleifend mauris. Primis bibendum urna luctus nec torquent justo proin. Eleifend inceptos pellentesque cras fames blandit ante curae orci est. Eu elit proin gravida curabitur sit iaculis lobortis.
+let longText = `Et Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse dictum tempor condimentum; ad condimentum morbi. Aliquam dictum elementum curabitur eu a a blandit. Mollis et iaculis sollicitudin nulla eleifend mauris. Primis bibendum urna luctus nec torquent justo proin. Eleifend inceptos pellentesque cras fames blandit ante curae orci est. Eu elit proin gravida curabitur sit iaculis lobortis.
 
 Adipiscing imperdiet aliquet congue habitasse; ut laoreet. Habitasse suscipit sollicitudin convallis eros accumsan. Massa lacinia nisi volutpat pretium curabitur, ad tempus sapien. Metus egestas consequat fringilla sagittis tempor aenean; nisl nisi. Vehicula habitasse praesent est nunc fringilla. Pulvinar senectus sem proin ex leo. Interdum quisque aenean dui montes dui malesuada eu nam non.
 
-Ipsum ut est eu mattis at efficitur, morbi enim. Facilisis ante efficitur sit proin mauris gravida laoreet eget pulvinar. Ipsum urna mollis eleifend bibendum maecenas. Accumsan tortor pretium diam urna elit ullamcorper rhoncus tempor etiam. Potenti convallis volutpat sodales, viverra turpis hendrerit. Imperdiet mus eget metus curabitur fusce. Augue arcu tempus nam at potenti amet. Facilisi porta ligula sapien maximus penatibus proin mi potenti. Ultricies hendrerit pretium cursus nascetur dignissim.`
+Ipsum ut est eu mattis at efficitur, morbi enim. Facilisis ante efficitur sit proin mauris gravida laoreet eget pulvinar. Ipsum urna mollis eleifend bibendum maecenas. Accumsan tortor pretium diam urna elit ullamcorper rhoncus tempor etiam. Potenti convallis volutpat sodales, viverra turpis hendrerit. Imperdiet mus eget metus curabitur fusce. Augue arcu tempus nam at potenti amet. Facilisi porta ligula sapien maximus penatibus proin mi potenti. Ultricies hendrerit pretium cursus nascetur dignissim et.`
 
 let etCounter = 0
 let tempWord = ''
 
 for (let i = 0; i < longText.length; i++) {
-	if (longText[i] !== ' ') {
-		tempWord += longText[i]
+	if (longText[i] !== ' ' && longText[i] !== '.') {
+		tempWord += longText[i].toLowerCase()
 	} else {
 		if (tempWord === 'et') {
 			etCounter++
